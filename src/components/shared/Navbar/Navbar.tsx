@@ -1,63 +1,41 @@
-"use client"
+import Link from "next/link"
+import Image from "next/image"
 
-import * as React from "react"
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuTrigger
-} from "@/components/ui/navigation-menu"
-
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-]
-
-export function Navbar() {
+export default function Navbar() {
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-        
-        </NavigationMenuItem>
-       
-      </NavigationMenuList>
-    </NavigationMenu>
+    <header className=" bg-[url(/hero-bg.png)]">
+
+      <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <Image
+            src='/logo.png'
+            alt="logo"
+            width={500}
+            height={500}
+            className="w-6 h-6"
+          />
+          <span className="font-medium text-[#3a0e0e]">Event Tap</span>
+        </div>
+        <nav className="hidden md:flex items-center gap-6">
+          <Link href="/" className="text-[#3a0e0e] hover:text-pink-600 transition-colors">
+            Home
+          </Link>
+          <Link href="/events" className="text-[#3a0e0e] hover:text-pink-600 transition-colors">
+            Events
+          </Link>
+          <Link href="/places" className="text-[#3a0e0e] hover:text-pink-600 transition-colors">
+            Places
+          </Link>
+          <Link href="/map-view" className="text-[#3a0e0e] hover:text-pink-600 transition-colors">
+            Map View
+          </Link>
+        </nav>
+        <Link href="/profile" className="flex items-center gap-1 text-[#3a0e0e] hover:text-pink-600 transition-colors">
+          <span className="hidden md:inline">Profile</span>
+        </Link>
+      </nav>
+
+    
+    </header>
   )
 }
-
