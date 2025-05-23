@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "first Event Tap",
+  title: "Event Tap",
   description: "Event Tap",
 };
 
