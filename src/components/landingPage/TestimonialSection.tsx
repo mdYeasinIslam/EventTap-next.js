@@ -30,11 +30,11 @@ const testimonials = [
 export default function TestimonialSection() {
 
   return (
-    <section className="bg-[#F3EEE7] md:h-[750px] flex items-center">
-      <div className="container mx-auto">
+    <section className="bg-[#F3EEE7] md:h-full flex items-center  ">
+      <div className="container mx-auto px-5 md:px-10 xl:px-0 my-20">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-[#2a0901] mb-16   font-[font-open-sans]">Testimonials</h2>
        
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6">
               {testimonials.map((t, i) => (
                 <div key={i} className="relative w-full bg-[url(/cardBg.png)] py-14 px-10 ">
                       <div className="text-[#a855f7] text-5xl absolute top-6 right-8">
@@ -52,13 +52,13 @@ export default function TestimonialSection() {
                     <div className="text-[#ff5757] text-right">
                     {"★★★★★".slice(0, t.rating)}
                     </div>
-                    <div className="absolute left-0 ">
+                    <div className="absolute left-0 md:-bottom-5 lg:-bottom-7 xl:-bottom-8 ">
                         <Image 
                             src={t.image}
                             alt={t.name}
                             width={500}
                             height={500}
-                            className="w-20 h-20 rounded-full "
+                            className="w-20 h-20 md:w-14 md:h-14 lg:w-16 xl:w-20 lg:h-16 xl:h-20 rounded-full "
                             />
                     </div>
                 </div>

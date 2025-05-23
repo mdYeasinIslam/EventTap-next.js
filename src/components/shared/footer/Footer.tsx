@@ -12,7 +12,7 @@ const socialIcons = [
 const Footer = () => {
     return (
         <footer className="bg-[#f8f5f3] pt-12 font-inherit text-[#222] text-base border-t border-[#eee]">
-            <div className="flex flex-col md:flex-row justify-around items-start max-w-[1200px] mx-auto px-6 gap-10">
+            <div className="flex flex-col md:flex-row justify-around items-start container mx-auto  gap-10">
                 {/* Quick Links */}
                 <div>
                     <h3 className="font-semibold mb-4">Quick Links</h3>
