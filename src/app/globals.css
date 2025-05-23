@@ -59,6 +59,11 @@ body {
 .font-open-sans {
   font-family: var(--font-open-sans);
 }
+
+.font-laila {
+  font-family: var(--font-laila);
+}
+
 @theme {
   /* --breakpoint-*: initial; */
   --breakpoint-sm: 640px;

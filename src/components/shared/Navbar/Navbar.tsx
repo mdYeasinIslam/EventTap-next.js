@@ -1,7 +1,7 @@
 'use client'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Heart, ShoppingCart, X } from 'lucide-react';
+import { X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -18,13 +18,13 @@ const Navbar = () => {
     const pathName= usePathname()
     const navElement = ({name,path}:NavbarProps)=>{
         return (
-            <li onClick={()=>setMenuOpen(false)} className={` ${pathName === `${path}` || pathName.includes(path+'/')? "text-blue-700 md:text-blue-500 font-semibold bg-[#f5d5a9] md:bg-[none]" : "text-black"} hover:bg-[#f5d5a9] duration-500 hover:text-blue-500 py-1 px-5 rounded-r-sm md:rounded-sm`}>
+            <li onClick={()=>setMenuOpen(false)} className={` ${pathName === `${path}` || pathName.includes(path+'/')? "text-blue-700 md:text-blue-500 font-semibold bg-[#f5d5a9] lg:bg-transparent" : "text-black"} hover:bg-[#f5d5a9] duration-500 hover:text-blue-500 py-1 px-5 rounded-r-sm md:rounded-sm`}>
                 <Link href={`${path}`} className={` text-sm  lg:text-[18px]  `}>{name}</Link>
             </li>
         )
     }
     return (   
-          <header className="absolute z-10 w-full top-6">
+          <header className={` w-full ${pathName==='/'?'absolute z-10 top-6 ':''}`}>
             <nav className="px-5 md:px-10 lg:px-16 xl:px-24  flex items-center justify-between">
               <div className="flex items-center gap-2">
                 {/* nav elements for sm device */}

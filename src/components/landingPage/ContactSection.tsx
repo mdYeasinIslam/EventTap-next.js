@@ -71,8 +71,8 @@ const   ContactSection = () => {
                 </div>
                 {/* Right Side */}
                 <div className="flex-1 bg-white rounded-lg border border-gray-200 p-7 space-y-3">
-                    <div className="font-fredoka text-4xl md:text-5xl font-bold text-[#3d1a0b]  leading-tight">
-                    <h1> Get in Touch</h1>
+                    <div className="font-fredoka text-4xl md:text-5xl font-bold text-[#3d1a0b]  leading-tight font-laila">
+                    <h1 > Get in Touch</h1>
                         <p className="text-gray-600 text-base ">
                             Contact with us and know about our events
                         </p>
