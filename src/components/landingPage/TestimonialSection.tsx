@@ -46,7 +46,7 @@ export default function TestimonialSection() {
                               className="w-10 h-10 object-cover"
                           />
                     </div>
-                    <h3 className="text-xl font-bold text-[#2a0901]">{t.name}</h3>
+                    <h3 className="text-xl font-bold text-[#2a090.31]">{t.name}</h3>
                     <p className="text-gray-600 mb-4">{t.role}</p>
                     <p className="text-gray-800 mb-6">"{t.text}"</p>
                     <div className="text-[#ff5757] text-right">

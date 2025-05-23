@@ -60,7 +60,7 @@ body {
   font-family: var(--font-open-sans);
 }
 @theme {
-  --breakpoint-*: initial;
+  /* --breakpoint-*: initial; */
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
