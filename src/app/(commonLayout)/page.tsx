@@ -11,8 +11,8 @@ const page = () => {
       <HeroSect />
       <FeaturesSection />
       <PlacesSection/>
-      <ContactSection />
       <FindEvents/>
+      <ContactSection />
       <TestimonialSection />
     </div>
   );

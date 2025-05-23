@@ -66,7 +66,7 @@ export default function page() {
             
             <div className="w-full  container mx-auto  ">
                 
-             <CommonHeader title="Featured Events"/>
+             <CommonHeader title="Places to Explore"/>
 
             <div className="relative overflow-hidden">
                 <div

@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const socialIcons = [
@@ -11,12 +12,12 @@ const socialIcons = [
 
 const Footer = () => {
     return (
-        <footer className="bg-[#f8f5f3] pt-12 font-inherit text-[#222] text-base border-t border-[#eee]">
-            <div className="flex flex-col md:flex-row justify-around items-start container mx-auto  gap-10">
+        <footer className="bg-[#f8f5f3] pt-12 px-5 xl:px-0 font-inherit text-[#222] text-base border-t border-[#eee]">
+            <div className="grid grid-cols-1 md:grid-cols-4 justify-between  md:items-start container mx-auto  gap-8 md:gap-2 xl:gap-10">
                 {/* Quick Links */}
                 <div>
-                    <h3 className="font-semibold mb-4">Quick Links</h3>
-                    <ul className="list-none p-0 m-0 leading-[2.2] space-y-1">
+                    <h3 className="font-semibold">Quick Links</h3>
+                    <ul className="list-none p-0 m-0 underline space-y-1">
                         <li><a href="/" className="text-[#222] no-underline hover:underline">Home</a></li>
                         <li><a href="/events" className="text-[#222] no-underline hover:underline">Events</a></li>
                         <li><a href="/places" className="text-[#222] no-underline hover:underline">Places</a></li>
@@ -26,7 +27,7 @@ const Footer = () => {
 
                 {/* Connect With Us */}
                 <div>
-                    <h3 className="font-semibold mb-4">Connect With Us</h3>
+                    <h3 className="font-semibold">Connect With Us</h3>
                     <div className="text-[#444] text-[15px] mb-3">
                         Follow us on social media for <br />
                         the latest updates and events:
@@ -47,30 +48,30 @@ const Footer = () => {
 
                 {/* Download Our App */}
                 <div>
-                    <h3 className="font-semibold mb-4">Download Our App</h3>
+                    <h3 className="font-semibold">Download Our App</h3>
                     <div className="text-[#444] text-[15px] mb-3">
                         Get the EventTap app for <br /> Android:
                     </div>
-                    <a
+                    <Link
                         href="#"
-                        className="inline-flex items-center border-[1.5px] border-[#e94f7c] rounded-3xl px-5 py-2 text-[#e94f7c] font-medium text-base no-underline gap-2 bg-white hover:bg-[#e94f7c] hover:text-white transition-colors duration-200"
+                        className="inline-flex items-center border-[1.5px] border-[#e94f7c] rounded-3xl px-2 lg:px-5 py-1 lg:py-2 text-[#e94f7c] font-medium text-base no-underline gap-2 bg-white hover:bg-[#e94f7c] hover:text-white transition-colors duration-200"
                     >
-                        <span className="inline-flex items-center text-xl">
+                        <span className="inline-flex items-center text-sm lg:text-xl">
                             
                         <Image
                                 src={`/playstore.png`}
                                 alt='playstore icon'
                                 width={500}
                                 height={500}
-                                className='w-7 h-7'
+                                className='w-5 lg:w-7 h-5 lg:h-7'
                         /></span>
-                        Open Play store
-                    </a>
+                        <span>Open Play store</span>
+                    </Link>
                 </div>
 
                 {/* Contact Info */}
                 <div>
-                    <h3 className="font-semibold mb-4">Contact Info</h3>
+                    <h3 className="font-semibold">Contact Info</h3>
                     <div className="text-[#444] text-[15px] mb-2">
                         Email: support@eventtap.com
                     </div>
