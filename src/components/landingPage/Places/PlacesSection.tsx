@@ -99,7 +99,7 @@ const PlacesSection = () => {
             
             <div className="w-full  container mx-auto  ">
                 
-           <CommonHeader title="Places to Explore"/>
+           <CommonHeader section='places' title="Places to Explore"/>
 
             <div className="relative overflow-hidden">
                 <div

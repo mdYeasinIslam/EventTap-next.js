@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import CommonHeader from "../../shared/heading/CommonHeader"
 import { EventType } from "@/types/EventType"
-import EventsDetails from "./Events"
 import Events from "./Events"
 
 // Sample event data
@@ -99,7 +98,7 @@ export function FeaturesSection() {
             
             <div className="w-full  container mx-auto  ">
                 
-           <CommonHeader title="Featured Events"/>
+           <CommonHeader section='events' title="Featured Events"/>
 
             <div className="relative overflow-hidden">
                 <div

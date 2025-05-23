@@ -24,7 +24,7 @@ const Navbar = () => {
         )
     }
     return (   
-          <header className={` w-full ${pathName==='/'?'absolute z-10 top-6 ':''}`}>
+          <header className={` w-full ${pathName==='/'?'absolute z-10 top-6 ':'py-5'}`}>
             <nav className="px-5 md:px-10 lg:px-16 xl:px-24  flex items-center justify-between">
               <div className="flex items-center gap-2">
                 {/* nav elements for sm device */}
