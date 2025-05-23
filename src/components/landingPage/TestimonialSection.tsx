@@ -37,7 +37,15 @@ export default function TestimonialSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {testimonials.map((t, i) => (
                 <div key={i} className="relative w-full bg-[url(/cardBg.png)] py-14 px-10 ">
-                    <div className="text-[#a855f7] text-5xl absolute top-6 right-8">"</div>
+                      <div className="text-[#a855f7] text-5xl absolute top-6 right-8">
+                          <Image
+                              src={'/testimonial-coma.png'}
+                              alt="coma"
+                              width={500}
+                              height={500}
+                              className="w-10 h-10 object-cover"
+                          />
+                    </div>
                     <h3 className="text-xl font-bold text-[#2a0901]">{t.name}</h3>
                     <p className="text-gray-600 mb-4">{t.role}</p>
                     <p className="text-gray-800 mb-6">"{t.text}"</p>
