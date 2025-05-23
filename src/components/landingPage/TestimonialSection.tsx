@@ -32,7 +32,7 @@ export default function TestimonialSection() {
   return (
     <section className="bg-[#F3EEE7] md:h-[750px] flex items-center">
       <div className="container mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-[#2a0901] mb-16">Testimonials</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-[#2a0901] mb-16   font-[font-open-sans]">Testimonials</h2>
        
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {testimonials.map((t, i) => (
