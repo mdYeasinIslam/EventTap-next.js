@@ -59,9 +59,9 @@ body {
 
 @theme {
   --breakpoint-*: initial;
-  --breakpoint-sm: ;
-  --breakpoint-md: ;
-  --breakpoint-lg: ;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);

@@ -1,8 +1,11 @@
+import HeroSect from "@/components/landingPage/HeroSect";
+import TestimonialSection from "@/components/landingPage/TestimonialSection";
 
 const page = () => {
   return (
     <div>
-      Landing Page
+      <HeroSect />
+      <TestimonialSection/>
     </div>
   );
 };

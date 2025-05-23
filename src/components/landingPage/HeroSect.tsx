@@ -1,9 +1,23 @@
-import Link from 'next/link'
-import React from 'react'
+'use client';
 
-const HeroSect = () => {
-  return (
-      <section className="container mx-auto px-4 py-16 md:py-24 flex flex-col items-center justify-center text-center">
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+const BackgroundImage = () => (
+    <div className="absolute top-0 left-0 w-full">
+        <Image
+            src="/hero-bg.png"
+            alt="Banner Background"
+            fill
+            priority
+            className=""
+        />
+    </div>
+);
+
+const ForegroundContent = () => (
+        <section className=" px-4 py-16 md:py-24 flex flex-col items-center justify-center text-center bg-[url(/hero-bg.png)]">
         <h1 className="text-5xl md:text-7xl font-bold text-[#2a0a0a] mb-6 max-w-3xl">Discover Events Around You</h1>
         <p className="text-[#3a0e0e] max-w-2xl mb-8 text-lg">
           Discover and participate in a rich variety of events designed to inspire, engage, and bring people together
@@ -16,7 +30,16 @@ const HeroSect = () => {
           Explore Events
         </Link>
       </section>
-  )
-}
+    
+);
 
-export default HeroSect
+const Banner = () => {
+    return (
+        <section className=" relative ">
+            <BackgroundImage />
+            <ForegroundContent />
+        </section>
+    );
+};
+
+export default Banner;
