@@ -13,7 +13,7 @@ const Carousel = ({ slides }: any) => {
   const goToNext = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
   return (
     <section className="relative">
-      <div className="relative h-[500px] md:h-[600px] rounded-2xl overflow-hidden">
+      <div className="relative h-[300px] md:h-[600px] rounded-2xl overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out h-full"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}

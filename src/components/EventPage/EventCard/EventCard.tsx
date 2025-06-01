@@ -36,7 +36,7 @@ const EventCard = ({ event }: Props) => {
         <p className="text-gray-500 text-sm mb-4">{event.description}</p>
 
         <Link href={`/events/${event.id}`}>
-          <button className="w-full text-rose-500 border border-rose-500 rounded-full py-2 text-sm font-medium hover:bg-rose-50 transition-colors">
+          <button  className="w-full text-rose-500 border border-rose-500 rounded-full py-2 text-sm font-medium hover:bg-rose-50 transition-colors">
             View Details
           </button>
         </Link>
