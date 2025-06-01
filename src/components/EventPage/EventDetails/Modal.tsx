@@ -47,6 +47,7 @@ export default function Modal({ onClose }: { onClose: () => void }) {
           </button>
         </div>
       </div>
+      
     </div>
   );
 }

@@ -1,7 +1,8 @@
 "use client";
 
 import Carousel from "@/components/EventPage/EventDetails/Carousel";
-import Modal  from "@/components/EventPage/EventDetails/Modal";
+import Modal from "@/components/EventPage/EventDetails/Modal";
+import TestimonialSection from "@/components/landingPage/TestimonialSection";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useState } from "react";
@@ -102,6 +103,33 @@ const events: EventType[] = [
   },
 ];
 
+const testimonials = [
+         {
+           name: "Sarah Marie",
+           role: "Outdoor Enthusiast",
+           text:
+       "EventTap made finding local events so easy and fun! I've joined several bike rides and meetups thanks to the app.",
+           rating: 5,
+           image: "/testimonial-img.jpg",
+         },
+         {
+           name: "Jason Loped",
+           role: "Event Organizer",
+           text:
+       "EventTap made finding local events so easy and fun! I've joined several bike rides and meetups thanks to the app.",
+           rating: 5,
+          image: "/testimonial-img.jpg",
+         },
+         {
+           name: "Priya Kusal",
+           role: "Adventure Seeker",
+           text:
+       "EventTap made finding local events so easy and fun! I've joined several bike rides and meetups thanks to the app.",
+           rating: 5,
+           image: "/testimonial-img.jpg",
+         },
+       ];
+
 export default function ImageCarousel() {
   const params = useParams();
   const id = params.id;
@@ -113,13 +141,14 @@ export default function ImageCarousel() {
     <div className="max-w-[1440px] mx-auto space-y-10 mb-10">
       <Carousel slides={slides} />
 
-      <div className="mx-auto bg-white px-4 lg:px-0 space-y-4">
+      <div className="mx-auto  bg-white px-4 lg:px-0 space-y-4">
         <div className="flex flex-col md:flex-row justify-between gap-2 items-start">
           <div className="space-y-5 flex-1">
             <div>
               <h1 className="text-6xl font-bold mb-2">{details?.title}</h1>
               <p className="text-gray-500 text-lg md:text-2xl">
-                {details?.location} <span className="ml-5">{details?.date}</span>
+                {details?.location}{" "}
+                <span className="ml-5">{details?.date}</span>
               </p>
             </div>
             <div className="flex pt-5 items-center gap-4">
@@ -181,7 +210,42 @@ export default function ImageCarousel() {
           </div>
         </div>
       </div>
-
+      {/* comment */}
+      <div>
+        <div className="grid grid-cols-1 p-15  bg-[#eddfd5] md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6">
+          {testimonials.map((t, i) => (
+            <div
+              key={i}
+              className="relative w-full bg-white bg-[url(/cardBg.png)] py-14 px-10 "
+            >
+              <div className="text-[#a855f7] text-5xl absolute top-6 right-8">
+                <Image
+                  src={"/testimonial-coma.png"}
+                  alt="coma"
+                  width={500}
+                  height={500}
+                  className="w-10 h-10 object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-[#2a090.31]">{t.name}</h3>
+              <p className="text-gray-600 mb-4">{t.role}</p>
+              <p className="text-gray-800 mb-6">"{t.text}"</p>
+              <div className="text-[#ff5757] text-right">
+                {"★★★★★".slice(0, t.rating)}
+              </div>
+              <div className="absolute left-0 md:-bottom-5 lg:-bottom-7 xl:-bottom-8 ">
+                <Image
+                  src={t.image}
+                  alt={t.name}
+                  width={500}
+                  height={500}
+                  className="w-20 h-20 md:w-14 md:h-14 lg:w-16 xl:w-20 lg:h-16 xl:h-20 rounded-full "
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} />}
     </div>
   );
