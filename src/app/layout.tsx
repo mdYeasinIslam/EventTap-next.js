@@ -24,6 +24,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${openSans.variable} ${laila.variable}`}
+         cz-shortcut-listen="true"
       >
         <Toaster position="top-center" expand={true} richColors />
         <Suspense fallback={<Loading />}>

@@ -10,21 +10,10 @@ const page = () => {
       <div className="  mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-screen gap-10 px-4 md:px-0">
         {/* form section */}
         <div className="flex-1 flex flex-col items-center justify-center bg-white rounded-lg  px-10 py-12 w-full ">
-          <h1 className="text-3xl font-bold mb-2 text-gray-800">Register</h1>
+          <h1 className="text-3xl font-bold mb-2 text-gray-800">
+            Forgot password
+          </h1>
           <form className="w-full flex flex-col gap-4 max-w-md">
-           {/* username */}
-            <div className="w-full">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Full Name
-              </label>
-              <input
-                type="text"
-                placeholder="Alex Gold"
-                className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-           {/* email */}
             <div className="w-full">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Email
@@ -35,7 +24,6 @@ const page = () => {
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
-            {/* password */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Password
@@ -46,29 +34,20 @@ const page = () => {
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
-    
+
             <button
               type="submit"
               className="bg-[#EA1E63] text-white font-semibold rounded py-3 mt-2 hover:bg-blue-700 transition"
             >
-             Register
+              Reset password
             </button>
           </form>
+           <div className="mt-20">
+            <h1 className="md:text-lg text-gray-400">Check your email for forgotest instructions</h1>
+        </div>
+        </div>
+       
 
-
-          {/* google login  */}
-            <div className="w-full flex flex-col max-w-md">
-              <button
-                type="button"
-                className="flex items-center justify-center gap-2 bg-white border border-[#EA1E63] hover:bg-blue-700 text-gray-500 font-semibold rounded py-3 mt-4 hover:text-white transition"
-              >
-                <FcGoogle className="text-xl" />
-                <span className="text-sm">Sign in with Google</span>
-              </button>
-            </div>
-            <h1 className="text-gray-400 mt-3">Already have an account?  <Link href='signIn' className="text-[#EA1E63] hover:underline pl-1 font-medium">Sign In..</Link></h1>
-          </div>
-        
         {/* img section */}
         <div className=" flex-1 h-full flex  mt-5 md:mt-0 bg-[#F3EEE7] w-full justify-center items-center  ">
           <div>

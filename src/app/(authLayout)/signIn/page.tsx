@@ -10,21 +10,8 @@ const page = () => {
       <div className="  mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-screen gap-10 px-4 md:px-0">
         {/* form section */}
         <div className="flex-1 flex flex-col items-center justify-center bg-white rounded-lg  px-10 py-12 w-full ">
-          <h1 className="text-3xl font-bold mb-2 text-gray-800">Register</h1>
+          <h1 className="text-3xl font-bold mb-2 text-gray-800">Login</h1>
           <form className="w-full flex flex-col gap-4 max-w-md">
-           {/* username */}
-            <div className="w-full">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Full Name
-              </label>
-              <input
-                type="text"
-                placeholder="Alex Gold"
-                className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-           {/* email */}
             <div className="w-full">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Email
@@ -35,7 +22,6 @@ const page = () => {
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
-            {/* password */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Password
@@ -46,12 +32,16 @@ const page = () => {
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
-    
+            <div className="flex justify-end w-full">
+              <Link href="/forgetPassword" className="text-gray-600 text-sm hover:underline">
+                Forgot password?
+              </Link>
+            </div>
             <button
               type="submit"
               className="bg-[#EA1E63] text-white font-semibold rounded py-3 mt-2 hover:bg-blue-700 transition"
             >
-             Register
+              Sign In
             </button>
           </form>
 
@@ -66,7 +56,7 @@ const page = () => {
                 <span className="text-sm">Sign in with Google</span>
               </button>
             </div>
-            <h1 className="text-gray-400 mt-3">Already have an account?  <Link href='signIn' className="text-[#EA1E63] hover:underline pl-1 font-medium">Sign In..</Link></h1>
+            <h1 className="text-gray-400 mt-3">Don't have an account?  <Link href='signUp' className="text-[#EA1E63] hover:underline pl-1 font-medium">Sign up..</Link></h1>
           </div>
         
         {/* img section */}
