@@ -1,10 +1,9 @@
-"use client"
+"use client";
 
-import { useState, useRef, useEffect } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { EventType } from "@/types/EventType"
-import CommonHeader from "@/components/shared/heading/CommonHeader"
-import Events from "@/components/landingPage/FeatureSection/Events"
+import { EventType } from "@/types/EventType";
+import CommonHeader from "@/components/shared/heading/CommonHeader";
+import Events from "@/components/landingPage/FeatureSection/Events";
+import EventHero from "@/components/EventPage/EventHero/EventHero";
 
 // Sample event data
 
@@ -57,29 +56,26 @@ const events: EventType[] = [
     location: "Chicago",
     image: "/featureImg.png",
   },
-]
+];
 
 export default function page() {
-
-    return (
-      <section className="bg-[#f8f5f2] py-16 px-5 xl:px-0">
-            
-            <div className="w-full  container mx-auto  ">
-                
-             <CommonHeader title="Featured Events"/>
-
-            <div className="relative overflow-hidden">
-                <div
-                className="grid grid-cols-4 gap-5" >
-              {events.map((event) => <Events
-                key={event?.id}
-                event={event}
-                section='events'
-              />)
-                  }
-                </div>
-            </div>
-            </div>
-      </section>
-  )
+  return (
+    <section className="bg-[#f8f5f2] pb-16  xl:px-0">
+      <div>
+        <EventHero></EventHero>
+      </div>
+      <h1 className="text-4xl font-bold text-center my-8">
+        All Events List
+      </h1>
+      <div className="w-full  container mx-auto  ">
+        <div className="relative overflow-hidden">
+          <div className="grid grid-cols-4 gap-5">
+            {events.map((event) => (
+              <Events key={event?.id} event={event} section="events" />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
