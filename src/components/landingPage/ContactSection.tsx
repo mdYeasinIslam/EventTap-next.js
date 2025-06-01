@@ -5,7 +5,7 @@ const   ContactSection = () => {
     return (
         <section className="bg-white   my-20">
 
-            <div className="container mx-auto flex gap-8 px-4 xl:px-0 font-sans flex-col lg:flex-row ">
+            <div className="max-w-[1440px] mx-auto flex gap-8 px-4 xl:px-0 font-sans flex-col lg:flex-row ">
                 {/* Left Side */}
                 <div className="flex-1 flex flex-col md:flex-row lg:flex-col   gap-6 ">
                         {/* Image */}

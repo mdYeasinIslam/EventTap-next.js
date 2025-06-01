@@ -6,7 +6,7 @@ import React from "react";
 type Props = {
   event: EventType;
   visibleItems?: number;
-  section: string;
+ 
 };
 
 const EventCard = ({ event }: Props) => {

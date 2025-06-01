@@ -31,7 +31,7 @@ export default function TestimonialSection() {
 
   return (
     <section className="bg-[#F3EEE7] md:h-full flex items-center  ">
-      <div className="container mx-auto px-5 md:px-10 xl:px-0 my-20">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-10 xl:px-0 my-20">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-[#2a0901] mb-16   font-laila">Testimonials</h2>
        
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6">
