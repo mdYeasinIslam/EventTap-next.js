@@ -96,7 +96,7 @@ export function FeaturesSection() {
     return (
       <section className="bg-[#f8f5f2] py-16 px-5 xl:px-0">
             
-            <div className="w-full  container mx-auto  ">
+            <div className="max-w-[1440px] w-full  mx-auto  ">
                 
            <CommonHeader section='events' title="Featured Events"/>
 

@@ -33,7 +33,7 @@ export function FindEvents() {
   const [selectedLocation, setSelectedLocation] = useState("")
 
   return (
-    <div className="w-full container mx-auto px-4 md:px-0 py-8">
+    <div className="max-w-[1440px] w-full  mx-auto px-4 md:px-0 py-8">
       {/* Header */}
       <div className="text-center mb-8 font-laila">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">Find Events by Category</h1>

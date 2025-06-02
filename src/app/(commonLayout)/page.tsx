@@ -6,6 +6,7 @@ import PlacesSection from "@/components/landingPage/Places/PlacesSection";
 import TestimonialSection from "@/components/landingPage/TestimonialSection";
 
 const page = () => {
+  
   return (
     <div>
       <HeroSect />
