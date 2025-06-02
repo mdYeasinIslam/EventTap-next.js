@@ -75,9 +75,9 @@ const TestimonialCard = ({
         <Image
           src={testimonial.image}
           alt={testimonial.name}
-          width={80}
-          height={80}
-          className="w-20 h-20 md:w-14 md:h-14 lg:w-16 xl:w-20 lg:h-16 xl:h-20 rounded-full"
+          width={100}
+          height={100}
+          className="w-20 h-20 md:w-14 md:h-14 object-cever lg:w-16 xl:w-20 lg:h-16 xl:h-20 rounded-full"
         />
       </div>
     </div>
