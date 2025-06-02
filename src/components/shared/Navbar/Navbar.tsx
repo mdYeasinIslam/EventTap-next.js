@@ -46,7 +46,7 @@ const Navbar = () => {
       <nav className="px-5 md:px-10 lg:px-16 xl:px-24">
         <div className="max-w-[1440px] mx-auto flex items-center justify-between">
           {/* Logo and Menu Icon */}
-          <div className="flex  items-center gap-2">
+          <div className="flex items-center gap-2">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="md:hidden focus:outline-none"
@@ -82,7 +82,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center gap-6 font-medium">
+          <ul className="hidden md:flex items-center gap-1 font-medium">
             {navElement({ name: "Home", path: "/" })}
             {navElement({ name: "Events", path: "/events" })}
             {navElement({ name: "Places", path: "/places" })}
@@ -90,7 +90,7 @@ const Navbar = () => {
           </ul>
 
           {/* Right-side Buttons */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-2">
             <Link href="/profile">
               <Avatar>
                 <AvatarImage
