@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const Carousel = ({ slides }: any) => {
+const PlacesCarousel = ({ slides }: any) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToSlide = (index: number) => setCurrentSlide(index);
@@ -13,7 +13,7 @@ const Carousel = ({ slides }: any) => {
   const goToNext = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
   return (
     <section className="relative">
-      <div className="relative h-[00px] md:h-[600px] rounded-2xl overflow-hidden">
+      <div className="relative h-[00px] md:h-[700px]  overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out h-full"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -71,4 +71,4 @@ const Carousel = ({ slides }: any) => {
   );
 };
 
-export default Carousel;
+export default PlacesCarousel;

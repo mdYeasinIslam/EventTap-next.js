@@ -3,7 +3,6 @@
 import Carousel from "@/components/EventPage/EventDetails/Carousel";
 import Modal from "@/components/EventPage/EventDetails/Modal";
 import Review from "@/components/EventPage/EventDetails/Review";
-import TestimonialSection from "@/components/landingPage/TestimonialSection";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useState } from "react";
