@@ -1,8 +1,8 @@
 "use client";
 
+import { PlaceCard } from "@/app/(commonLayout)/places/[id]/page";
 import Image from "next/image";
 import React, { useState } from "react";
-import { PlaceCard } from "@/types"; // Assuming you exported interface from a types file
 
 const PlaceModal = ({ modal }: { modal: PlaceCard }) => {
   const { image, title, description } = modal;
