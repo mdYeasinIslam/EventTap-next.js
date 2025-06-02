@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 interface Slide {
   id: number;
   image: string;
-  alt: string;
+  alt: string;   
 }
 
 interface PlacesCarouselProps {
