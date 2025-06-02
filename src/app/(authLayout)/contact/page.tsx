@@ -70,30 +70,16 @@ const page = () => {
               type="submit"
               className="bg-[#EA1E63] text-white font-semibold rounded py-3 mt-2 hover:bg-pink-700 transition"
             >
-              Register
+              Submit
             </button>
           </form>
 
           {/* Google login */}
           <div className="w-full flex flex-col mt-4">
-            <button
-              type="button"
-              className="flex items-center justify-center gap-2 bg-white border border-[#EA1E63] hover:bg-pink-700 text-gray-500 hover:text-white font-semibold rounded py-3 transition"
-            >
-              <FcGoogle className="text-xl" />
-              <span className="text-sm">Sign in with Google</span>
-            </button>
+           
           </div>
 
-          <p className="text-gray-500 mt-4 text-sm text-center">
-            Already have an account?
-            <Link
-              href="/signIn"
-              className="text-[#EA1E63] hover:underline pl-1 font-medium"
-            >
-              Sign In..
-            </Link>
-          </p>
+        
         </div>
 
         {/* Contact Info Section */}
