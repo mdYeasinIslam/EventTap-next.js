@@ -25,7 +25,7 @@ const Navbar = () => {
             ? "font-semibold bg-white/30 lg:bg-transparent"
             : ""
           }
-          ${pathName === "/events" ? "text-white" : "text-black"}
+          ${pathName === "/events" || pathName ==='/places' ? "text-white" : "text-black"}
           duration-500 hover:text-blue-500 py-1 px-5 rounded-r-sm md:rounded-sm
         `}
       >
@@ -39,8 +39,8 @@ const Navbar = () => {
   return (
     <header
       className={`w-full py-5 z-10 ${
-        pathName === "/" || pathName === "/events" ? "absolute" : ""
-      } ${pathName === "/events" ? "text-white" : ""}`}
+        pathName === "/" || pathName === "/events" || pathName ==='/places' ? "absolute" : ""
+      } ${pathName === "/events"  ? "text-white" : ""}`}
     >
       <nav className="px-5 md:px-10 lg:px-16 xl:px-24">
         <div className="max-w-[1440px] w-full mx-auto flex items-center justify-between">

@@ -12,7 +12,7 @@ type Props = {
 const EventCard = ({ event }: Props) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100 h-full">
-      <div className="relative  h-48 w-full">
+      <div className="relative   h-80">
         <Image
           src={`${event?.image}`}
           alt={event.title}
