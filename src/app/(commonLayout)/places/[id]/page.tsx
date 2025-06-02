@@ -29,7 +29,7 @@ export interface PlaceCard {
   description: string;
 }
 
-export const placesCard: PlaceCard[] = [
+ const placesCard: PlaceCard[] = [
   {
     id: "1",
     title: "Sunset Beach",

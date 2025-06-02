@@ -4,7 +4,17 @@ import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const PlacesCarousel = ({ slides }: any) => {
+interface Slide {
+  id: number;
+  image: string;
+  alt: string;
+}
+
+interface PlacesCarouselProps {
+  slides: Slide[];
+}
+
+const PlacesCarousel = ({ slides }: PlacesCarouselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToSlide = (index: number) => setCurrentSlide(index);
