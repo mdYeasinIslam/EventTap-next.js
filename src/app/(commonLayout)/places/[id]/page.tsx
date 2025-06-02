@@ -1,7 +1,7 @@
 "use client";
 import PlaceCard from "@/components/PlacesPage/PlaceCard";
+import PlaceModal from "@/components/PlacesPage/PlaceModal";
 import PlacesCarousel from "@/components/PlacesPage/PlacesCarousel";
-import Image from "next/image";
 
 import { useParams } from "next/navigation";
 import React from "react";
@@ -21,6 +21,48 @@ export type EventType = {
   location: string;
   image?: string;
 };
+
+export interface PlaceCard {
+  id: string;
+  title: string;
+  image: string;
+  description: string;
+}
+
+export const placesCard: PlaceCard[] = [
+  {
+    id: "1",
+    title: "Sunset Beach",
+    image: "/featureImg.png",
+    description:
+      "A beautiful beach with golden sands and breathtaking sunsets.",
+  },
+  {
+    id: "2",
+    title: "Mountain Trail",
+    image: "/featureImg.png",
+    description: "A scenic mountain trail perfect for hiking and nature walks.",
+  },
+  {
+    id: "3",
+    title: "City Lights",
+    image: "/featureImg.png",
+    description: "Experience the vibrant nightlife and stunning skyline views.",
+  },
+  {
+    id: "4",
+    title: "Forest Escape",
+    image: "/featureImg.png",
+    description: "Relax and unwind in the serene beauty of the forest.",
+  },
+  {
+    id: "5",
+    title: "Desert Dunes",
+    image: "/featureImg.png",
+    description: "Explore the vast and mysterious desert landscape.",
+  },
+];
+
 
 const slides: CarouselSlide[] = [
   {
@@ -111,9 +153,9 @@ const page = () => {
       <PlacesCarousel slides={slides} />
       <div className="max-w-[1440px] mx-auto space-y-10 mb-10">
         <div className="mx-auto  bg-white px-4 lg:px-0 space-y-4">
-          <div className="flex flex-col md:flex-row justify-between gap-2 mt-5 items-start">
+          <div className="flex flex-col md:flex-row justify-between gap-2 mt-7 items-start">
             <div>
-              <h1 className="text-4xl font-bold mb-2">{details?.title}</h1>
+              <h1 className="text-4xl font-bold ">{details?.title}</h1>
             </div>
             <div>
               <p className="text-[#EF6E98] font-semibold text-lg md:text-2xl">
@@ -130,9 +172,9 @@ const page = () => {
             </div>
           </div>
           {/* card */}
-          <div className="grid grid-cols-1 px-4 lg:px-0 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-            {places.slice(0, 3).map((place) => (
-              <PlaceCard  key={place.id} place={place} />
+          <div className="grid grid-cols-1 px-4 lg:px-0 md:grid-cols-2 lg:grid-cols-3 my-10 gap-8 ">
+            {placesCard.slice(0, 3).map((modal) => (
+              <PlaceModal key={modal.id} modal={modal}></PlaceModal>
             ))}
           </div>
 
@@ -156,4 +198,3 @@ const page = () => {
 };
 
 export default page;
-<h1>hey</h1>;
