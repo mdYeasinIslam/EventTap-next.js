@@ -42,7 +42,7 @@ const page = () => {
               className="bg-[#EA1E63] text-white font-semibold rounded py-3 mt-2 hover:bg-blue-700 transition"
             >
               Sign In
-            </button>
+            </button>    
           </form>
 
 
