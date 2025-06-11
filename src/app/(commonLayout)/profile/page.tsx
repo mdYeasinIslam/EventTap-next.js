@@ -97,49 +97,55 @@ const ProfilePage = () => {
 
             <form className="space-y-4 text-left">
               <div>
-                <label className="block text-sm font-medium text-[#35140D]">
+                <label htmlFor="fullName" className="block text-sm font-medium text-[#35140D]">
                   Full Name
                 </label>
                 <input
+                  id="fullName"
                   type="text"
                   className="w-full mt-1 border border-gray-300 rounded-md p-2 outline-none focus:ring-2 focus:ring-pink-500"
                   placeholder="John Doe"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#35140D]">
+                <label htmlFor="email" className="block text-sm font-medium text-[#35140D]">
                   Email
                 </label>
                 <input
+                  id="email"
                   type="email"
                   className="w-full mt-1 border border-gray-300 rounded-md p-2 outline-none focus:ring-2 focus:ring-pink-500"
                   placeholder="john@example.com"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#35140D]">
+                <label htmlFor="birthDate" className="block text-sm font-medium text-[#35140D]">
                   Birth Date
                 </label>
                 <input
+                  id="birthDate"
                   type="date"
                   className="w-full mt-1 border border-gray-300 rounded-md p-2 outline-none focus:ring-2 focus:ring-pink-500"
+                  placeholder="Select birth date"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#35140D]">
+                <label htmlFor="sex" className="block text-sm font-medium text-[#35140D]">
                   Sex
                 </label>
                 <input
+                  id="sex"
                   type="text"
                   className="w-full mt-1 border border-gray-300 rounded-md p-2 outline-none focus:ring-2 focus:ring-pink-500"
                   placeholder="Male / Female / Other"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#35140D]">
+                <label htmlFor="language" className="block text-sm font-medium text-[#35140D]">
                   Language
                 </label>
                 <input
+                  id="language"
                   type="text"
                   className="w-full mt-1 border border-gray-300 rounded-md p-2 outline-none focus:ring-2 focus:ring-pink-500"
                   placeholder="English"

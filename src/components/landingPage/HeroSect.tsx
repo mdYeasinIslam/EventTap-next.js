@@ -24,10 +24,10 @@ const ForegroundContent = () => (
           around shared interests, wherever life takes you.
         </p>
         <Link
-          href="/events"
+          href="/eventCreate"
           className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 rounded-md transition-colors"
         >
-          Explore Events
+          Create Events
         </Link>
       </section>
     
