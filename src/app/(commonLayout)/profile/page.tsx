@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const ProfilePage = () => {
@@ -20,12 +21,23 @@ const ProfilePage = () => {
           </div>
           <h2 className="mt-4 text-2xl font-bold text-gray-800">John Doe</h2>
           <p className="text-gray-500">Frontend Developer</p>
-          <button
-            className="mt-4 px-6 py-2 bg-[#E60076] text-white rounded hover:bg-[#e60076] transition"
-            onClick={() => setIsOpen(true)}
-          >
-            Edit Profile
-          </button>
+          <div className="flex items-center gap-5 justify-between">
+            <div>
+              <button
+                className="mt-4 px-6 py-2 bg-[#E60076] border-2 border-[#E60076] text-white rounded transition hover:shadow-md hover:scale-105"
+                onClick={() => setIsOpen(true)}
+              >
+                Edit Profile
+              </button>
+            </div>
+            <div>
+              <Link href="/eventCreate">
+                <button className="mt-4 px-6 py-2 border-2 border-[#E60076] text-[#E60076] rounded transition hover:shadow-md hover:scale-105">
+                  Create Event
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
 
         <div className="mt-6 text-left">
