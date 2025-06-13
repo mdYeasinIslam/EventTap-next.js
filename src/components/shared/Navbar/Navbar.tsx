@@ -93,7 +93,7 @@ const Navbar = () => {
 
           {/* Right-side Buttons */}
           <div className="hidden md:flex items-center gap-2">
-            <Link href="/profile">
+            <Link href="/dashboard">
               <Avatar>
                 <AvatarImage
                   src="https://github.com/shadcn.png"
