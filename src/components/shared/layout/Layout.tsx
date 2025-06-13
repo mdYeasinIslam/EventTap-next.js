@@ -133,7 +133,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children, menu }) => {
             padding: "16px 24px",
           }}
         >
-          © Dubai Art Events. All rights reserved.
+          © Event Tap. All rights reserved.
         </Footer>
       </Layout>
     </Layout>

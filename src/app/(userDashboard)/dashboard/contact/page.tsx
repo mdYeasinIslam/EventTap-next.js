@@ -7,11 +7,11 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <section className="min-h-screen flex items-center bg-[#F9F9F9]">
-      <div className="container mx-auto px-4 md:px-8 flex flex-col-reverse md:flex-row items-center justify-center gap-10 py-12">
+    <section className="min-h-screen bg-gray-100 p-4 md:p-8">
+      <div className=" max-w-4xl mx-auto bg-white rounded-lg shadow-md p-4 space-y-6">
         {/* Form Section */}
-        <div className="w-full md:w-1/2 bg-white rounded-lg px-6 sm:px-8 md:px-10 py-10 shadow-md">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800 text-center md:text-left">
+        <div className="w-full bg-white rounded-lg px-6 sm:px-8 md:px-10 py-10 ">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800 text-center">
             Contact Us
           </h1>
 
@@ -73,18 +73,11 @@ const page = () => {
               Submit
             </button>
           </form>
-
-          {/* Google login */}
-          <div className="w-full flex flex-col mt-4">
-           
-          </div>
-
-        
         </div>
 
         {/* Contact Info Section */}
-        <div className="w-full md:w-1/2 flex items-center justify-center bg-[#F3EEE7] rounded-lg p-6 sm:p-10 h-full">
-          <div className="text-center md:text-left">
+        <div className="w-full flex items-center justify-center bg-[#F3EEE7] rounded-lg p-6 sm:p-10">
+          <div className="text-center">
             <h1 className="text-[#EA1E63] font-bold text-2xl mb-4">
               Contact Info
             </h1>
