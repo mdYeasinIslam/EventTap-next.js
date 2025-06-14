@@ -16,7 +16,7 @@ import Link from "next/link";
 const { Header, Content, Footer, Sider } = Layout;
 
 // Define MenuItem type based on Ant Design Menu item structure
-export type MenuItem = Required<MenuProps>["items"][number];
+export type MenuItem = Exclude<MenuProps["items"], undefined>[number];
 
 export function getItem(
   label: React.ReactNode,
@@ -133,7 +133,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children, menu }) => {
             padding: "16px 24px",
           }}
         >
-          © Dubai Art Events. All rights reserved.
+          © Event Tap. All rights reserved.
         </Footer>
       </Layout>
     </Layout>

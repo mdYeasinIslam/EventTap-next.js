@@ -15,6 +15,7 @@ import {
   ShieldAlert,
   LogOut,
   LayoutDashboard,
+  Contact,
 } from "lucide-react";
 import AdminLayout, { getItem, MenuItem } from "../Layout";
 
@@ -68,6 +69,11 @@ const navItems: MenuItem[] = [
     <Link href="/dashboard/about">About</Link>,
     "/dashboard/about",
     <ShieldAlert />
+  ),
+  getItem(
+    <Link href="/dashboard/contact">Contact Us</Link>,
+    "/dashboard/contact",
+    <Contact />
   ),
   getItem(<Link href="/logout">Logout</Link>, "/logout", <LogOut />),
 ];
