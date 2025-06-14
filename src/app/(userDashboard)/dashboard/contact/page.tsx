@@ -1,9 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { FcGoogle } from "react-icons/fc";
-import React from "react";
-import Link from "next/link";
+
 
 const page = () => {
   return (
