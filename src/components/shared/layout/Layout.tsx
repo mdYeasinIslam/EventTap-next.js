@@ -16,7 +16,7 @@ import Link from "next/link";
 const { Header, Content, Footer, Sider } = Layout;
 
 // Define MenuItem type based on Ant Design Menu item structure
-export type MenuItem = Required<MenuProps>["items"][number];
+export type MenuItem = Exclude<MenuProps["items"], undefined>[number];
 
 export function getItem(
   label: React.ReactNode,
